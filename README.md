@@ -1,36 +1,193 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 GitHub Stats Viewer
+<div align="center">
+Show Image
+Show Image
+Show Image
+Show Image
 
-## Getting Started
+Aplikasi web yang menampilkan statistik GitHub dengan tampilan glassmorphism yang memukau
 
-First, run the development server:
+Demo Live | Report Bug | Request Feature
 
-```bash
+</div>
+📋 Daftar Isi
+Tentang Proyek
+Fitur
+Screenshot
+Teknologi yang Digunakan
+Instalasi
+Penggunaan
+Pengembangan
+Kontribusi
+Lisensi
+Kontak
+🎯 Tentang Proyek
+GitHub Stats Viewer adalah aplikasi web yang menampilkan statistik GitHub secara visual dengan desain glassmorphism yang modern. Aplikasi ini memungkinkan pengguna untuk melihat berbagai metrik GitHub seperti commit history, bahasa pemrograman yang digunakan, activity graph, dan banyak lagi hanya dengan memasukkan username GitHub.
+
+✨ Mengapa Proyek Ini?
+Visual yang Memukau: Desain glassmorphism dengan tema yang selaras dengan GitHub
+Responsif: Tampilan yang optimal di semua perangkat
+Mudah Digunakan: Interface yang intuitif dan user-friendly
+Informatif: Menampilkan statistik lengkap dalam satu halaman
+🌟 Fitur
+📊 Statistik Lengkap
+GitHub Stats: Total commits, stars, PRs, dan issues
+Top Languages: Bahasa pemrograman yang paling sering digunakan
+Activity Graph: Grafik aktivitas kontribusi harian
+Profile Summary: Ringkasan profil lengkap
+Repos per Language: Distribusi repository berdasarkan bahasa
+Most Commit Language: Bahasa dengan commit terbanyak
+Profile Stats: Statistik profil detail
+Productive Time: Waktu produktif kontribusi
+GitHub Trophies: Pencapaian dan trophy GitHub
+🎨 Desain & UI/UX
+Glassmorphism Effect: Efek kaca transparan yang modern
+Dark Theme: Tema gelap yang nyaman di mata
+Responsive Design: Layout yang adaptif untuk semua ukuran layar
+Smooth Animations: Animasi yang halus dan menarik
+Interactive Elements: Hover effects dan micro-interactions
+🔧 Teknikal
+TypeScript: Type safety dan development experience yang lebih baik
+Next.js 13+: Framework React terbaru dengan App Router
+Tailwind CSS: Utility-first CSS framework
+Optimized Images: Lazy loading dan optimasi gambar
+SEO Friendly: Meta tags dan struktur yang SEO-friendly
+📸 Screenshot
+Desktop View
+Show Image
+
+Mobile View
+<div align="center"> <img src="https://via.placeholder.com/300x600/1f2937/ffffff?text=Mobile+View" alt="Mobile Screenshot" width="300"> </div>
+Features Preview
+GitHub Stats	Top Languages	Activity Graph
+Show Image
+Show Image
+Show Image
+🛠️ Teknologi yang Digunakan
+Framework: Next.js 13+
+Language: TypeScript
+Styling: Tailwind CSS
+Icons: Lucide React
+API: GitHub Stats APIs
+Deployment: Vercel
+🚀 Instalasi
+Prerequisites
+Pastikan Anda telah menginstall:
+
+Node.js (v18.17 atau lebih tinggi)
+npm atau yarn atau pnpm
+Setup Lokal
+Clone repository
+bash
+git clone https://github.com/yourusername/github-stats-viewer.git
+cd github-stats-viewer
+Install dependencies
+bash
+npm install
+# atau
+yarn install
+# atau
+pnpm install
+Setup environment variables (optional)
+bash
+cp .env.example .env.local
+Edit .env.local jika diperlukan:
+env
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+Jalankan development server
+bash
 npm run dev
-# or
+# atau
 yarn dev
-# or
+# atau
 pnpm dev
-# or
-bun dev
-```
+Buka browser Navigasi ke http://localhost:3000 untuk melihat aplikasi.
+📱 Penggunaan
+Langkah-langkah:
+Buka aplikasi di browser
+Masukkan username GitHub di kolom input
+Klik tombol "Tampilkan Stats" atau tekan Enter
+Lihat statistik yang ditampilkan secara otomatis
+Scroll down untuk melihat semua jenis statistik
+Tips:
+Gunakan username GitHub yang valid untuk hasil terbaik
+Statistik akan dimuat secara lazy loading untuk performa optimal
+Klik link GitHub untuk mengunjungi profil asli
+🔨 Pengembangan
+Structure Proyek
+github-stats-viewer/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Main page
+│   └── globals.css        # Global styles
+├── components/            # React components
+│   └── GitHubStatsViewer.tsx
+├── public/               # Static assets
+├── tailwind.config.js    # Tailwind configuration
+├── next.config.js        # Next.js configuration
+└── package.json          # Dependencies
+Available Scripts
+bash
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Code Quality
+npm run lint         # Run ESLint
+npm run type-check   # Run TypeScript compiler
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Deployment
+npm run deploy       # Deploy to Vercel
+Customization
+Mengubah Tema Warna
+Edit file components/GitHubStatsViewer.tsx:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+typescript
+// Ubah gradient background
+className="min-h-screen bg-gradient-to-br from-your-color via-your-color to-your-color"
 
-## Learn More
+// Ubah warna button
+className="bg-gradient-to-r from-your-color to-your-color"
+Menambah Statistik Baru
+Tambahkan objek baru ke array statsCards:
 
-To learn more about Next.js, take a look at the following resources:
+typescript
+{
+  title: 'New Stat',
+  src: `https://new-api-url.com/api?username=${displayUsername}&theme=github_dark`,
+}
+🤝 Kontribusi
+Kontribusi selalu diterima! Berikut cara berkontribusi:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Fork repository ini
+Create branch fitur (git checkout -b feature/amazing-feature)
+Commit perubahan (git commit -m 'Add some amazing feature')
+Push ke branch (git push origin feature/amazing-feature)
+Open Pull Request
+Guidelines Kontribusi
+Pastikan kode mengikuti style guide yang ada
+Tambahkan tests untuk fitur baru
+Update dokumentasi jika diperlukan
+Gunakan conventional commits
+📄 Lisensi
+Didistribusikan di bawah Lisensi MIT. Lihat LICENSE untuk informasi lebih lanjut.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📞 Kontak
+Your Name - @yourtwitter - your.email@example.com
 
-## Deploy on Vercel
+Project Link: https://github.com/yourusername/github-stats-viewer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🙏 Terima Kasih
+GitHub Readme Stats
+GitHub Profile Summary Cards
+GitHub Activity Graph
+GitHub Profile Trophy
+Lucide Icons
+Tailwind CSS
+<div align="center">
+⭐ Jika proyek ini membantu, jangan lupa kasih star! ⭐
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Show Image
+
+</div>
