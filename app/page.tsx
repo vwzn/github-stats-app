@@ -1,17 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent, KeyboardEvent } from "react";
 import { Search, Github, User, GitBranch, Star, Users } from "lucide-react";
+import Image from "next/image";
+
 export default function Home() {
-  const [username, setUsername] = useState("");
+    const [username, setUsername] = useState("");
     const [displayUsername, setDisplayUsername] = useState("");
     const [isValid, setIsValid] = useState(false);
 
-    const handleSubmit = (e: any) => {
+    const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
         if (username.trim()) {
             setDisplayUsername(username.trim());
             setIsValid(true);
+        }
+    };
+
+    const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === "Enter") {
+            handleSubmit(e);
         }
     };
 
@@ -77,13 +85,9 @@ export default function Home() {
                                     onChange={(e) =>
                                         setUsername(e.target.value)
                                     }
+                                    onKeyPress={handleKeyPress}
                                     placeholder="Masukkan username GitHub..."
                                     className="w-full bg-white/10 border border-white/30 rounded-xl pl-10 pr-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm"
-                                    onKeyPress={(e) => {
-                                        if (e.key === "Enter") {
-                                            handleSubmit(e);
-                                        }
-                                    }}
                                 />
                             </div>
                             <button
@@ -127,12 +131,16 @@ export default function Home() {
                                     <GitBranch className="w-5 h-5" />
                                     Activity Graph
                                 </h3>
-                                <img
-                                    src={`https://github-readme-activity-graph.vercel.app/graph?username=${displayUsername}&theme=github-compact&hide_border=true&area=true&custom_title=GitHub%20Activity%20Graph`}
-                                    alt="Activity Graph"
-                                    className="w-full h-auto rounded-xl"
-                                    loading="lazy"
-                                />
+                                <div className="relative w-full h-auto aspect-[4/1]">
+                                    <Image
+                                        src={`https://github-readme-activity-graph.vercel.app/graph?username=${displayUsername}&theme=github-compact&hide_border=true&area=true&custom_title=GitHub%20Activity%20Graph`}
+                                        alt="Activity Graph"
+                                        fill
+                                        className="rounded-xl"
+                                        loading="lazy"
+                                        unoptimized // Needed for external images
+                                    />
+                                </div>
                             </div>
                         </div>
 
@@ -142,12 +150,16 @@ export default function Home() {
                                 <Users className="w-5 h-5" />
                                 Profile Summary
                             </h3>
-                            <img
-                                src={`https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${displayUsername}&theme=github_dark`}
-                                alt="Profile Summary"
-                                className="w-full h-auto rounded-xl"
-                                loading="lazy"
-                            />
+                            <div className="relative w-full h-auto aspect-[4/1]">
+                                <Image
+                                    src={`https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${displayUsername}&theme=github_dark`}
+                                    alt="Profile Summary"
+                                    fill
+                                    className="rounded-xl"
+                                    loading="lazy"
+                                    unoptimized
+                                />
+                            </div>
                         </div>
 
                         {/* Stats Grid */}
@@ -161,12 +173,16 @@ export default function Home() {
                                         {card.title}
                                     </h3>
                                     <div className="rounded-xl overflow-hidden bg-black/20 p-2">
-                                        <img
-                                            src={card.src}
-                                            alt={card.title}
-                                            className="w-full h-auto rounded-lg"
-                                            loading="lazy"
-                                        />
+                                        <div className="relative w-full h-auto aspect-[2/1]">
+                                            <Image
+                                                src={card.src}
+                                                alt={card.title}
+                                                fill
+                                                className="rounded-lg"
+                                                loading="lazy"
+                                                unoptimized
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             ))}
@@ -179,12 +195,15 @@ export default function Home() {
                                 GitHub Trophies
                             </h3>
                             <div className="rounded-2xl overflow-hidden bg-black/20 p-4">
-                                <img
-                                    src={`https://github-profile-trophy.vercel.app/?username=${displayUsername}&theme=darkhub&no-frame=true&column=4&margin-w=15&margin-h=15`}
-                                    alt="GitHub Trophies"
-                                    className="w-full h-auto"
-                                    loading="lazy"
-                                />
+                                <div className="relative w-full h-auto aspect-[4/1]">
+                                    <Image
+                                        src={`https://github-profile-trophy.vercel.app/?username=${displayUsername}&theme=darkhub&no-frame=true&column=4&margin-w=15&margin-h=15`}
+                                        alt="GitHub Trophies"
+                                        fill
+                                        loading="lazy"
+                                        unoptimized
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
