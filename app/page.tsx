@@ -172,7 +172,7 @@ export default function Home() {
                                         <Star className="w-5 h-5" />
                                         {card.title}
                                     </h3>
-                                    <div className="rounded-xl overflow-hidden bg-black/20 p-2">
+                                    <div className="rounded-xl overflow-hidden  p-2">
                                         <div className="relative w-full h-auto aspect-[2/1]">
                                             <Image
                                                 src={card.src}
@@ -194,8 +194,8 @@ export default function Home() {
                                 <Star className="w-5 h-5 text-yellow-500" />
                                 GitHub Trophies
                             </h3>
-                            <div className="rounded-2xl overflow-hidden bg-black/20 p-4">
-                                <div className="relative w-full h-auto aspect-[4/1]">
+                            <div className="rounded-2xl overflow-hidden p-2">
+                                <div className="relative w-full h-auto aspect-[2/1]">
                                     <Image
                                         src={`https://github-profile-trophy.vercel.app/?username=${displayUsername}&theme=darkhub&no-frame=true&column=4&margin-w=15&margin-h=15`}
                                         alt="GitHub Trophies"
