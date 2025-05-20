@@ -1,4 +1,4 @@
-🚀 GitHub Stats Viewer
+# 🚀 GitHub Stats Viewer
 <div align="center">
 Show Image
 Show Image
@@ -10,7 +10,9 @@ Aplikasi web yang menampilkan statistik GitHub dengan tampilan glassmorphism yan
 Demo Live | Report Bug | Request Feature
 
 </div>
-📋 Daftar Isi
+
+## 📋 Daftar Isi
+
 Tentang Proyek
 Fitur
 Screenshot
@@ -21,15 +23,20 @@ Pengembangan
 Kontribusi
 Lisensi
 Kontak
-🎯 Tentang Proyek
+
+## 🎯 Tentang Proyek
+
 GitHub Stats Viewer adalah aplikasi web yang menampilkan statistik GitHub secara visual dengan desain glassmorphism yang modern. Aplikasi ini memungkinkan pengguna untuk melihat berbagai metrik GitHub seperti commit history, bahasa pemrograman yang digunakan, activity graph, dan banyak lagi hanya dengan memasukkan username GitHub.
 
-✨ Mengapa Proyek Ini?
+## ✨ Mengapa Proyek Ini?
+
 Visual yang Memukau: Desain glassmorphism dengan tema yang selaras dengan GitHub
 Responsif: Tampilan yang optimal di semua perangkat
 Mudah Digunakan: Interface yang intuitif dan user-friendly
 Informatif: Menampilkan statistik lengkap dalam satu halaman
-🌟 Fitur
+
+## 🌟 Fitur
+
 📊 Statistik Lengkap
 GitHub Stats: Total commits, stars, PRs, dan issues
 Top Languages: Bahasa pemrograman yang paling sering digunakan
@@ -40,30 +47,37 @@ Most Commit Language: Bahasa dengan commit terbanyak
 Profile Stats: Statistik profil detail
 Productive Time: Waktu produktif kontribusi
 GitHub Trophies: Pencapaian dan trophy GitHub
-🎨 Desain & UI/UX
+
+## 🎨 Desain & UI/UX
+
 Glassmorphism Effect: Efek kaca transparan yang modern
 Dark Theme: Tema gelap yang nyaman di mata
 Responsive Design: Layout yang adaptif untuk semua ukuran layar
 Smooth Animations: Animasi yang halus dan menarik
 Interactive Elements: Hover effects dan micro-interactions
-🔧 Teknikal
+
+## 🔧 Teknikal
+
 TypeScript: Type safety dan development experience yang lebih baik
 Next.js 13+: Framework React terbaru dengan App Router
 Tailwind CSS: Utility-first CSS framework
 Optimized Images: Lazy loading dan optimasi gambar
 SEO Friendly: Meta tags dan struktur yang SEO-friendly
-📸 Screenshot
+
+## 📸 Screenshot
 Desktop View
 Show Image
-
+belum upload sabar...
 Mobile View
-<div align="center"> <img src="https://via.placeholder.com/300x600/1f2937/ffffff?text=Mobile+View" alt="Mobile Screenshot" width="300"> </div>
+belum upload sabar...
 Features Preview
 GitHub Stats	Top Languages	Activity Graph
 Show Image
 Show Image
 Show Image
-🛠️ Teknologi yang Digunakan
+
+## 🛠️ Teknologi yang Digunakan
+
 Framework: Next.js 13+
 Language: TypeScript
 Styling: Tailwind CSS
