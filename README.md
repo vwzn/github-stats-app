@@ -1,207 +1,98 @@
-# 🚀 GitHub Stats Viewer
-<div align="center">
-Show Image
-Show Image
-Show Image
-Show Image
+# 🚀 GitHub Stats Viewer  
 
-Aplikasi web yang menampilkan statistik GitHub dengan tampilan glassmorphism yang memukau
+A stunning GitHub statistics viewer with glassmorphism UI design.  
 
-Demo Live | Report Bug | Request Feature
+<div align="center">  
+  <h3>✨ Features</h3>  
+  <p>Beautiful glassmorphism UI • Responsive design • GitHub API integration</p>  
 
-</div>
+  <h2>📱 Mobile Preview</h2>  
+  <img src="https://github.com/user-attachments/assets/b631af1b-63bc-4223-a49e-e9264c67f852" width="200" alt="Mobile screenshot 1">  
+  <img src="https://github.com/user-attachments/assets/149b9bbd-50e3-447d-b099-f4a4e9e3c235" width="200" alt="Mobile screenshot 2">  
+  <img src="https://github.com/user-attachments/assets/a1cb8847-3803-4d40-9b4e-0177660a4646" width="200" alt="Mobile screenshot 3">  
+  <img src="https://github.com/user-attachments/assets/97332507-d6f9-480d-b0fa-de4ca42a47ba" width="200" alt="Mobile screenshot 4">  
 
-## 📋 Daftar Isi
+  <h2>💻 Desktop Preview</h2>  
+  <img src="https://github.com/user-attachments/assets/0665cc99-f68e-4c83-af4d-8ad6b350dd67" width="600" alt="Desktop screenshot">  
 
-Tentang Proyek
-Fitur
-Screenshot
-Teknologi yang Digunakan
-Instalasi
-Penggunaan
-Pengembangan
-Kontribusi
-Lisensi
-Kontak
+  <h3>Additional Screenshots</h3>  
+  <img src="https://github.com/user-attachments/assets/b3857b90-731b-4b2d-9fd3-f49fda302d4b" width="300" alt="Screenshot 1">  
+  <img src="https://github.com/user-attachments/assets/e99a9ed2-01ea-44ee-a248-0d5211de9247" width="300" alt="Screenshot 2">  
+  <img src="https://github.com/user-attachments/assets/7e5de716-a7ce-467f-bcac-32a8bbea9854" width="300" alt="Screenshot 3">  
+  <img src="https://github.com/user-attachments/assets/0e3a363b-dc2d-43cf-86b6-527663ab32ff" width="300" alt="Screenshot 4">  
+</div>  
 
-## 🎯 Tentang Proyek
+## 🎯 About the Project  
 
-GitHub Stats Viewer adalah aplikasi web yang menampilkan statistik GitHub secara visual dengan desain glassmorphism yang modern. Aplikasi ini memungkinkan pengguna untuk melihat berbagai metrik GitHub seperti commit history, bahasa pemrograman yang digunakan, activity graph, dan banyak lagi hanya dengan memasukkan username GitHub.
+GitHub Stats Viewer is a web application that visually displays GitHub statistics with a modern glassmorphism design. This app allows users to view various GitHub metrics such as commit history, programming languages used, activity graphs, and much more—just by entering a GitHub username.  
 
-## ✨ Mengapa Proyek Ini?
+## ✨ Why This Project?  
 
-Visual yang Memukau: Desain glassmorphism dengan tema yang selaras dengan GitHub
-Responsif: Tampilan yang optimal di semua perangkat
-Mudah Digunakan: Interface yang intuitif dan user-friendly
-Informatif: Menampilkan statistik lengkap dalam satu halaman
+- **Stunning Visuals**: Glassmorphism design with a GitHub-themed color scheme  
+- **Responsive**: Optimized display for all devices  
+- **User-Friendly**: Intuitive and easy-to-use interface  
+- **Informative**: Comprehensive statistics displayed on a single page  
 
-## 🌟 Fitur
+## 🛠️ Technologies Used  
+- **Framework**: Next.js 13+  
+- **Language**: TypeScript  
+- **Styling**: Tailwind CSS  
+- **Icons**: Lucide React  
+- **API**: GitHub Stats APIs  
+- **Deployment**: Vercel  
 
-📊 Statistik Lengkap
-GitHub Stats: Total commits, stars, PRs, dan issues
-Top Languages: Bahasa pemrograman yang paling sering digunakan
-Activity Graph: Grafik aktivitas kontribusi harian
-Profile Summary: Ringkasan profil lengkap
-Repos per Language: Distribusi repository berdasarkan bahasa
-Most Commit Language: Bahasa dengan commit terbanyak
-Profile Stats: Statistik profil detail
-Productive Time: Waktu produktif kontribusi
-GitHub Trophies: Pencapaian dan trophy GitHub
+## 🌟 Key Features  
+📊 **Complete Statistics**  
+- **GitHub Stats**: Total commits, stars, PRs, and issues  
+- **Top Languages**: Most frequently used programming languages  
+- **Activity Graph**: Daily contribution activity graph  
+- **Profile Summary**: Detailed profile overview  
+- **Repos per Language**: Repository distribution by language  
+- **Most Commit Language**: Language with the most commits  
+- **Profile Stats**: Detailed profile statistics  
+- **Productive Time**: Most active contribution times  
+- **GitHub Trophies**: Achievements and GitHub trophies  
 
-## 🎨 Desain & UI/UX
+## 🚀 Getting Started  
+1. Clone the repository  
+2. Install dependencies: `npm install`  
+3. Run the app: `npm start`  
+4. Open `http://localhost:3000` in your browser  
 
-Glassmorphism Effect: Efek kaca transparan yang modern
-Dark Theme: Tema gelap yang nyaman di mata
-Responsive Design: Layout yang adaptif untuk semua ukuran layar
-Smooth Animations: Animasi yang halus dan menarik
-Interactive Elements: Hover effects dan micro-interactions
+### 🔨 Development  
+- **Project Structure**  
+```  
+github-stats-viewer/  
+├── app/                    # Next.js App Router  
+│   ├── layout.tsx         # Root layout  
+│   ├── page.tsx           # Main page  
+│   └── globals.css        # Global styles  
+│  
+├── public/                # Static assets  
+├── tailwind.config.js     # Tailwind configuration  
+├── next.config.js         # Next.js configuration  
+└── package.json           # Dependencies  
+```  
 
-## 🔧 Teknikal
+## 🤝 Contributing  
 
-TypeScript: Type safety dan development experience yang lebih baik
-Next.js 13+: Framework React terbaru dengan App Router
-Tailwind CSS: Utility-first CSS framework
-Optimized Images: Lazy loading dan optimasi gambar
-SEO Friendly: Meta tags dan struktur yang SEO-friendly
+Contributions are always welcome! Here's how you can contribute:  
 
-## 📸 Screenshot
-Desktop View
-Show Image
-belum upload sabar...
-Mobile View
-belum upload sabar...
-Features Preview
-GitHub Stats	Top Languages	Activity Graph
-Show Image
-Show Image
-Show Image
+Project Link: [https://github.com/vwzn/github-stats-viewer](https://github.com/vwzn/github-stats-viewer)  
 
-## 🛠️ Teknologi yang Digunakan
+# 🙏 Acknowledgments  
 
-Framework: Next.js 13+
-Language: TypeScript
-Styling: Tailwind CSS
-Icons: Lucide React
-API: GitHub Stats APIs
-Deployment: Vercel
-🚀 Instalasi
-Prerequisites
-Pastikan Anda telah menginstall:
+- GitHub Readme Stats  
+- GitHub Profile Summary Cards  
+- GitHub Activity Graph  
+- GitHub Profile Trophy  
+- Lucide Icons  
+- Tailwind CSS  
 
-Node.js (v18.17 atau lebih tinggi)
-npm atau yarn atau pnpm
-Setup Lokal
-Clone repository
-bash
-git clone https://github.com/yourusername/github-stats-viewer.git
-cd github-stats-viewer
-Install dependencies
-bash
-npm install
-# atau
-yarn install
-# atau
-pnpm install
-Setup environment variables (optional)
-bash
-cp .env.example .env.local
-Edit .env.local jika diperlukan:
-env
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-Jalankan development server
-bash
-npm run dev
-# atau
-yarn dev
-# atau
-pnpm dev
-Buka browser Navigasi ke http://localhost:3000 untuk melihat aplikasi.
-📱 Penggunaan
-Langkah-langkah:
-Buka aplikasi di browser
-Masukkan username GitHub di kolom input
-Klik tombol "Tampilkan Stats" atau tekan Enter
-Lihat statistik yang ditampilkan secara otomatis
-Scroll down untuk melihat semua jenis statistik
-Tips:
-Gunakan username GitHub yang valid untuk hasil terbaik
-Statistik akan dimuat secara lazy loading untuk performa optimal
-Klik link GitHub untuk mengunjungi profil asli
-🔨 Pengembangan
-Structure Proyek
-github-stats-viewer/
-├── app/                    # Next.js App Router
-│   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Main page
-│   └── globals.css        # Global styles
-├── components/            # React components
-│   └── GitHubStatsViewer.tsx
-├── public/               # Static assets
-├── tailwind.config.js    # Tailwind configuration
-├── next.config.js        # Next.js configuration
-└── package.json          # Dependencies
-Available Scripts
-bash
-# Development
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run start        # Start production server
+<div align="center">  
+⭐ If this project helps you, don't forget to give it a star! ⭐  
+</div>  
 
-# Code Quality
-npm run lint         # Run ESLint
-npm run type-check   # Run TypeScript compiler
+## 📝 License  
 
-# Deployment
-npm run deploy       # Deploy to Vercel
-Customization
-Mengubah Tema Warna
-Edit file components/GitHubStatsViewer.tsx:
-
-typescript
-// Ubah gradient background
-className="min-h-screen bg-gradient-to-br from-your-color via-your-color to-your-color"
-
-// Ubah warna button
-className="bg-gradient-to-r from-your-color to-your-color"
-Menambah Statistik Baru
-Tambahkan objek baru ke array statsCards:
-
-typescript
-{
-  title: 'New Stat',
-  src: `https://new-api-url.com/api?username=${displayUsername}&theme=github_dark`,
-}
-🤝 Kontribusi
-Kontribusi selalu diterima! Berikut cara berkontribusi:
-
-Fork repository ini
-Create branch fitur (git checkout -b feature/amazing-feature)
-Commit perubahan (git commit -m 'Add some amazing feature')
-Push ke branch (git push origin feature/amazing-feature)
-Open Pull Request
-Guidelines Kontribusi
-Pastikan kode mengikuti style guide yang ada
-Tambahkan tests untuk fitur baru
-Update dokumentasi jika diperlukan
-Gunakan conventional commits
-📄 Lisensi
-Didistribusikan di bawah Lisensi MIT. Lihat LICENSE untuk informasi lebih lanjut.
-
-📞 Kontak
-Your Name - @yourtwitter - your.email@example.com
-
-Project Link: https://github.com/yourusername/github-stats-viewer
-
-🙏 Terima Kasih
-GitHub Readme Stats
-GitHub Profile Summary Cards
-GitHub Activity Graph
-GitHub Profile Trophy
-Lucide Icons
-Tailwind CSS
-<div align="center">
-⭐ Jika proyek ini membantu, jangan lupa kasih star! ⭐
-
-Show Image
-
-</div>
+This project is licensed under the MIT License.
